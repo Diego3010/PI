@@ -1,0 +1,15 @@
+############### Makefile ###################
+
+all: main
+
+main: main.o 
+
+    gcc main-o -o main -lm
+    
+main.o: main.c
+
+    gcc -o main.c -W -Wall -pedantic
+    
+clean:
+
+rm main
